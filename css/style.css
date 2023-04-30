@@ -6,6 +6,8 @@
   --white-color: #ffffff;
   --light-color: #f4f4fd;
   --border: #e7e9fc;
+  --acent-bg-icon: #31d0aa;
+  --customers-color: rgba(142, 143, 153, 1);
 }
 
 body {
@@ -210,6 +212,7 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* inform section */
+
 .inform {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -233,6 +236,20 @@ img {
   font-size: 20px;
   letter-spacing: 0.02em;
   line-height: 1.2;
+}
+
+/* inform icons */
+
+.icon-inform {
+  background-color: var(--light-color);
+  margin-bottom: 8px;
+  padding: 24px 100px;
+}
+
+.featers-icon {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* product section */
@@ -294,6 +311,8 @@ img {
 }
 
 .team-text {
+  margin-bottom: 8px;
+
   color: var(--primary-text-color);
   text-align: center;
 }
@@ -302,12 +321,43 @@ img {
   padding: 32px 16px;
 }
 
+/* social icons */
+
+.icon-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  background-color: var(--btn--logo-color);
+}
+
+.social-icon {
+  fill: var(--white-color);
+}
+
+.team-link:hover,
+.team-link:focus {
+  background-color: var(--acent-color);
+}
+
 /* customers section */
 
 .customers {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+
 .customers-title {
   margin-bottom: 72px;
   text-align: center;
@@ -317,22 +367,46 @@ img {
   font-size: 36px;
   line-height: 1.11;
 }
+
 .customers-list {
   display: flex;
   gap: 24px;
 }
+
 .customers-item {
+  padding: 16px 32px;
   width: 168px;
   height: 88px;
-  border: 1px solid #8e8f99;
+  border: 1px solid var(--customers-color);
   border-radius: 4px;
 }
+
+.customers-item:hover,
+.customers-item:focus {
+  border: 1px solid var(--acent-color);
+  border-radius: 4px;
+}
+
 .customers-link {
+  text-align: center;
+  display: block;
+}
+
+/* customers icon */
+
+.customers-icon {
+  fill: var(--customers-color);
+}
+
+.customers-icon:hover,
+.customers-icon:focus {
+  fill: var(--acent-color);
 }
 
 /* footer */
 .footer-conteiner {
   display: flex;
+  align-items: baseline;
 }
 
 .footer {
@@ -362,8 +436,17 @@ img {
 }
 
 .footer-second-title {
+  margin-bottom: 16px;
+
   color: var(--white-color);
   font-weight: 500;
+}
+
+/* footer icons */
+
+.footer-link:hover,
+.footer-link:focus {
+  background-color: var(--acent-bg-icon);
 }
 
 /* portfolio */
