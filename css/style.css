@@ -297,15 +297,14 @@ img {
 .team-item {
   flex-basis: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
-  padding: 0 0 32px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 
   background-color: var(--white-color);
 }
 
-.card-img {
-  margin-bottom: 32px;
+.card-text {
+  padding: 32px 0;
 }
 
 .team-second-title {
@@ -400,17 +399,14 @@ img {
 .customers-link:focus {
   border: 1px solid var(--acent-color);
   border-radius: 4px;
+
+  color: var(--acent-color);
 }
 
 /* customers icon */
 
 .customers-icon {
   fill: currentColor;
-}
-
-.customers-icon:hover,
-.customers-icon:focus {
-  fill: var(--acent-color);
 }
 
 /* footer */
@@ -426,6 +422,10 @@ img {
   background-color: var(--secondary-text-color);
 }
 
+.footer-left {
+  margin-right: 120px;
+}
+
 .logo-footer {
   display: inline-block;
   margin-bottom: 16px;
@@ -436,7 +436,6 @@ img {
 }
 
 .footer-text {
-  margin-right: 120px;
   width: 264px;
 
   color: var(--light-color);
